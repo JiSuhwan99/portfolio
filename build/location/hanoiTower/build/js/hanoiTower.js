@@ -5,9 +5,9 @@ $(document).ready(() => {
 
     function moveFloor(n, giveArray, getArray, giveTower, getTower, setTime) {
         let towerIdArray = [
-            [`#firstTower`, `<span>1번</span>`],
-            [`#secondTower`, `<span>2번</span>`],
-            [`#thirdTower`, `<span>3번</span>`]
+            [`#firstTower`, `<span>1번째</span>`],
+            [`#secondTower`, `<span>2번째</span>`],
+            [`#thirdTower`, `<span>3번째</span>`]
         ];
         getArray.push(giveArray.pop(n));
         let moveFloor;

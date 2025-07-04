@@ -1,5 +1,5 @@
 [[redirects]]
-from = "/matrixcalCulator"
+from = "/matrixcalCalculator"
 to = "/location/matrixcalculator/build/html/matrixcalculator"
 status = 200
 force = true
