@@ -1,5 +1,5 @@
 [[redirects]]
-from = "/hanoiTower"
-to = "/location/hanoiTower/build/html/hanoiTower.html"
+from = "/matrixcalculator"
+to = "/location/matrixcalculator/build/html/matrixcalculator"
 status = 200
 force = true
