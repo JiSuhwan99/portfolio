@@ -1,0 +1,83 @@
+@import url("reset.css");
+.inPage {
+  width: 120rem;
+  height: 150rem;
+  margin: 0 auto;
+}
+.inPage > .inPageBlur {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inPage > .inPageBlur > .inPageModal {
+  width: 110rem;
+  height: 130rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(250, 250, 250);
+}
+.inPage > .inPageBlur > .inPageModal > :first-child {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.inPage > .inPageBlur > .inPageModal > :first-child > .iconBox {
+  width: 15%;
+  height: 100%;
+  text-align: center;
+}
+.inPage > .inPageBlur > .inPageModal > :first-child > .iconBox > i {
+  font-size: 10rem;
+  line-height: 14rem;
+  cursor: pointer;
+}
+.inPage > .inPageBlur > .inPageModal > :nth-child(2) {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.inPage > .inPageBlur > .inPageModal > :nth-child(2) > .imgBox {
+  width: 60%;
+  height: 90%;
+  background-image: url("../img/card.png");
+  background-size: 100% 100%;
+}
+.inPage > .inPageBlur > .inPageModal > :nth-child(3) {
+  width: 100%;
+  height: 10%;
+}
+.inPage > .inPageBlur > .inPageModal > :nth-child(3) > p {
+  font-size: 7rem;
+  text-align: center;
+  line-height: 12.8rem;
+}
+.inPage > .inPageBlur > .inPageModal > :last-child {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inPage > .inPageBlur > .inPageModal > :last-child > .buttonBox {
+  width: 70%;
+  height: 40%;
+}
+.inPage > .inPageBlur > .inPageModal > :last-child > .buttonBox > button {
+  width: 100%;
+  height: 100%;
+  font-size: 6rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: rgb(228, 100, 117);
+  color: rgb(250, 250, 250);
+  border: none;
+  outline: 0;
+}/*# sourceMappingURL=inCardModal.css.map */

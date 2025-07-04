@@ -1,0 +1,1033 @@
+@import "reset.css";
+.portfolioSection {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.portfolioSection .portfolioArticle {
+  display: flex;
+  gap: 30px;
+  height: auto;
+}
+.portfolioSection  .portfolioSubject {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: row;
+  margin-bottom: 5.5%;
+  width: 55%;
+  height: 11.7rem;
+}
+.portfolioSection .portfolioSubject .portfolioIcon {
+  width: 7.38%;
+  height: 11.7rem;
+  overflow: hidden;
+  background: url(../img/icon/subjectIcon.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioSubject header {
+  width: 95%;
+  font-family: "Sriracha", cursive;
+  display: flex;
+  flex-flow: column;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-left: 3%;
+  color: #111111;
+}
+.portfolioSection .portfolioSubject header span {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.portfolioSection .portfolioArticle {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  justify-content: space-between;
+}
+.portfolioSection .portfolioArticle .portfolioOne {
+  display: flex;
+  width: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioOne .picturePart {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioOne .picturePart div {
+  width: 100%;
+  height: 345px;
+  background: url(../img/matrixCalculator.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 55%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .contentBox {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .contentBox ul {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .contentBox ul li {
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: #092252;
+  letter-spacing: -0.1rem;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .contentBox ul li span {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #092252;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .contentBox ul .iconList {
+  margin-top: 1%;
+  width: 100%;
+  height: 33.333%;
+  display: flex;
+  justify-content: flex-start;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .contentBox ul .iconList li {
+  width: 5.26%;
+  height: 100%;
+  margin-right: 3.5%;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .contentBox ul .iconList .iconOne {
+  background: url(../img/icon/jquery.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .contentBox ul .iconList .iconTwo {
+  background: url(../img/icon/sass.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .contentBox ul .iconList .iconThree {
+  background: url(../img/icon/pug.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .contentBox p {
+  font-size: 2.1rem;
+  font-weight: 300;
+  color: #888888;
+  line-height: 160%;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .buttonBox {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 84.696%;
+  height: 10%;
+  margin-top: 5%;
+  justify-content: flex-start;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .buttonBox button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  font-size: 1.5rem;
+  margin-left: 0%;
+  margin-right: 10%;
+  background: transparent;
+  border-radius: 1rem;
+  transition: linear 0.2s all;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .buttonBox button i {
+  opacity: 0;
+  font-size: 150%;
+  margin-top: 8%;
+  display: hidden;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .buttonBox button span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #111111;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .buttonBox button:hover {
+  transition: linear 0.2s all;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .buttonBox button:hover i {
+  opacity: 1;
+  display: block;
+  transition: linear 0.2s all;
+  font-size: 150%;
+  color: #d7eeef;
+  margin-top: 0rem;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .buttonBox button:hover span {
+  transition: linear 0.2s all;
+  color: #d7eeef;
+  margin-right: 0%;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart {
+  align-items: flex-start;
+  width: 55%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .contentBox {
+  text-align: left;
+  margin-left: 10%;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .buttonBox {
+  margin-left: 10%;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .buttonBox button {
+  border: 0.3rem solid #415ca6;
+}
+.portfolioSection .portfolioArticle .portfolioOne .contentPart .buttonBox button:hover {
+  border: 0.3rem solid #0e2460;
+  background: #0e2460;
+}
+.portfolioSection .portfolioArticle .portfolioTwo {
+  display: flex;
+  width: 100%;
+  
+}
+.portfolioSection .portfolioArticle .portfolioTwo .picturePart {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .picturePart div {
+  width: 100%;
+  height: 345px;
+  background: url(../img/matrixCalculator.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 55%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .contentBox {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .contentBox ul {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .contentBox ul li {
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: #092252;
+  letter-spacing: -0.1rem;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .contentBox ul li span {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #092252;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .contentBox ul .iconList {
+  margin-top: 1%;
+  width: 100%;
+  height: 33.333%;
+  display: flex;
+  justify-content: flex-end;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .contentBox ul .iconList li {
+  width: 5.26%;
+  height: 100%;
+  margin-right: 3.5%;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .contentBox ul .iconList .iconOne {
+  background: url(../img/icon/jquery.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .contentBox ul .iconList .iconTwo {
+  background: url(../img/icon/sass.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .contentBox ul .iconList .iconThree {
+  background: url(../img/icon/pug.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .contentBox p {
+  font-size: 2.1rem;
+  font-weight: 300;
+  color: #888888;
+  line-height: 160%;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .buttonBox {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 84.696%;
+  height: 10%;
+  margin-top: 5%;
+  justify-content: flex-end;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .buttonBox button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  font-size: 1.5rem;
+  margin-left: 10%;
+  margin-right: 0%;
+  background: transparent;
+  border-radius: 1rem;
+  transition: linear 0.2s all;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .buttonBox button i {
+  opacity: 0;
+  font-size: 150%;
+  margin-left: -2.8%;
+  margin-top: 8%;
+  display: hidden;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .buttonBox button span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #111111;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .buttonBox button:hover {
+  transition: linear 0.2s all;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .buttonBox button:hover i {
+  opacity: 1;
+  display: block;
+  transition: linear 0.2s all;
+  font-size: 150%;
+  color: #d7eeef;
+  margin-top: 0rem;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .buttonBox button:hover span {
+  transition: linear 0.2s all;
+  color: #d7eeef;
+  margin-right: 0%;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .picturePart div {
+  width: 100%;
+  height: 345px;
+  background: url("../img/hanoiTowerImage.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart {
+  align-items: flex-end;
+  width: 55%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .contentBox {
+  width: 90%;
+  text-align: right;
+  align-items: flex-end;
+  margin-right: 10%;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .buttonBox {
+  margin-right: 10%;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .buttonBox button {
+  border: 0.3rem solid #707070;
+}
+.portfolioSection .portfolioArticle .portfolioTwo .contentPart .buttonBox button:hover {
+  border: 0.3rem solid #111111;
+  background: #111111;
+}
+.portfolioSection .portfolioArticle .portfolioThree {
+  display: flex;
+  width: 100%;
+  
+}
+.portfolioSection .portfolioArticle .portfolioThree .picturePart {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioThree .picturePart div {
+  width: 100%;
+  height: 80%;
+  background: url(../img/matrixCalculator.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 55%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .contentBox {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .contentBox ul {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .contentBox ul li {
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: #092252;
+  letter-spacing: -0.1rem;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .contentBox ul li span {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #092252;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .contentBox ul .iconList {
+  margin-top: 1%;
+  width: 100%;
+  height: 33.333%;
+  display: flex;
+  justify-content: flex-start;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .contentBox ul .iconList li {
+  width: 5.26%;
+  height: 100%;
+  margin-right: 3.5%;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .contentBox ul .iconList .iconOne {
+  background: url(../img/icon/jquery.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .contentBox ul .iconList .iconTwo {
+  background: url(../img/icon/sass.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .contentBox ul .iconList .iconThree {
+  background: url(../img/icon/pug.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .contentBox p {
+  font-size: 2.1rem;
+  font-weight: 300;
+  color: #888888;
+  line-height: 160%;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .buttonBox {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 84.696%;
+  height: 10%;
+  margin-top: 5%;
+  justify-content: flex-start;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .buttonBox button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  font-size: 1.5rem;
+  margin-left: 0%;
+  margin-right: 10%;
+  background: transparent;
+  border-radius: 1rem;
+  transition: linear 0.2s all;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .buttonBox button i {
+  opacity: 0;
+  font-size: 150%;
+  margin-left: -2.8%;
+  margin-top: 8%;
+  display: hidden;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .buttonBox button span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #111111;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .buttonBox button:hover {
+  transition: linear 0.2s all;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .buttonBox button:hover i {
+  opacity: 1;
+  display: block;
+  transition: linear 0.2s all;
+  font-size: 150%;
+  color: #d7eeef;
+  margin-top: 0rem;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentPart .buttonBox button:hover span {
+  transition: linear 0.2s all;
+  color: #d7eeef;
+  margin-right: 0%;
+}
+.portfolioSection .portfolioArticle .portfolioThree .picturePart div {
+  width: 100%;
+  height: 345px;
+  background: url("../img/parkingKioskImage.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentBox {
+  text-align: left;
+  margin-left: 10%;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentBox .iconList .iconFour {
+  background: url("../img/icon/nodejs.png") no-repeat;
+}
+.portfolioSection .portfolioArticle .portfolioThree .contentBox .iconList .iconFive {
+  background: url("../img/icon/mysql.png") no-repeat;
+}
+.portfolioSection .portfolioArticle .portfolioThree .buttonBox {
+  margin-left: 10%;
+}
+.portfolioSection .portfolioArticle .portfolioThree .buttonBox button {
+  border: 0.3rem solid #6565af;
+}
+.portfolioSection .portfolioArticle .portfolioThree .buttonBox button:hover {
+  border: 0.3rem solid #3f3f7c;
+  background: #3f3f7c;
+}
+.portfolioSection .portfolioArticle .portfolioFour {
+  display: flex;
+  width: 100%;
+  
+}
+.portfolioSection .portfolioArticle .portfolioFour .picturePart {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioFour .picturePart div {
+  width: 100%;
+  height: 345px;
+  background: url(../img/matrixCalculator.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 55%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .contentBox {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .contentBox ul {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .contentBox ul li {
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: #092252;
+  letter-spacing: -0.1rem;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .contentBox ul li span {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #092252;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .contentBox ul .iconList {
+  margin-top: 1%;
+  width: 100%;
+  height: 33.333%;
+  display: flex;
+  justify-content: flex-end;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .contentBox ul .iconList li {
+  width: 5.26%;
+  height: 100%;
+  margin-right: 3.5%;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .contentBox ul .iconList .iconOne {
+  background: url(../img/icon/jquery.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .contentBox ul .iconList .iconTwo {
+  background: url(../img/icon/sass.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .contentBox ul .iconList .iconThree {
+  background: url(../img/icon/pug.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .contentBox p {
+  font-size: 2.1rem;
+  font-weight: 300;
+  color: #888888;
+  line-height: 160%;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .buttonBox {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 84.696%;
+  height: 10%;
+  margin-top: 5%;
+  justify-content: flex-end;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .buttonBox button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  font-size: 1.5rem;
+  margin-left: 10%;
+  margin-right: 0%;
+  background: transparent;
+  border-radius: 1rem;
+  transition: linear 0.2s all;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .buttonBox button i {
+  opacity: 0;
+  font-size: 150%;
+  margin-left: -2.8%;
+  margin-top: 8%;
+  display: hidden;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .buttonBox button span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #111111;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .buttonBox button:hover {
+  transition: linear 0.2s all;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .buttonBox button:hover i {
+  opacity: 1;
+  display: block;
+  transition: linear 0.2s all;
+  font-size: 150%;
+  color: #d7eeef;
+  margin-top: 0rem;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .buttonBox button:hover span {
+  transition: linear 0.2s all;
+  color: #d7eeef;
+  margin-right: 0%;
+}
+.portfolioSection .portfolioArticle .portfolioFour .picturePart div {
+  width: 100%;
+  height: 345px;
+  background: url("../img/rhythmPangPangImage.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart {
+  align-items: flex-end;
+  width: 55%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .contentBox {
+  width: 90%;
+  text-align: right;
+  align-items: flex-end;
+  margin-right: 10%;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .contentBox .iconFour {
+  background: url("../img/icon/nodejs.png") no-repeat;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .contentBox .iconFive {
+  background: url("../img/icon/mysql.png") no-repeat;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .buttonBox {
+  margin-right: 10%;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .buttonBox button {
+  border: 0.3rem solid #48addb;
+}
+.portfolioSection .portfolioArticle .portfolioFour .contentPart .buttonBox button:hover {
+  border: 0.3rem solid #267cb5;
+  background: #267cb5;
+}/*# sourceMappingURL=portfolioSection.css.map */
+
+.portfolioSection .portfolioArticle .portfolioFive {
+  display: flex;
+  width: 100%;
+  
+}
+.portfolioSection .portfolioArticle .portfolioFive .picturePart {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioFive .picturePart div {
+  width: 100%;
+  height: 80%;
+  background: url(../img/matrixCalculator.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 55%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .contentBox {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .contentBox ul {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .contentBox ul li {
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: #092252;
+  letter-spacing: -0.1rem;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .contentBox ul li span {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #092252;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .contentBox ul .iconList {
+  margin-top: 1%;
+  width: 100%;
+  height: 33.333%;
+  display: flex;
+  justify-content: flex-start;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .contentBox ul .iconList li {
+  width: 5.26%;
+  height: 100%;
+  margin-right: 3.5%;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .contentBox ul .iconList .iconOne {
+  background: url(../img/icon/jquery.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .contentBox ul .iconList .iconTwo {
+  background: url(../img/icon/sass.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .contentBox ul .iconList .iconThree {
+  background: url(../img/icon/pug.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .contentBox p {
+  font-size: 2.1rem;
+  font-weight: 300;
+  color: #888888;
+  line-height: 160%;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .buttonBox {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 84.696%;
+  height: 10%;
+  margin-top: 5%;
+  justify-content: flex-start;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .buttonBox button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  font-size: 1.5rem;
+  margin-left: 0%;
+  margin-right: 10%;
+  background: transparent;
+  border-radius: 1rem;
+  transition: linear 0.2s all;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .buttonBox button i {
+  opacity: 0;
+  font-size: 150%;
+  margin-left: -2.8%;
+  margin-top: 8%;
+  display: hidden;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .buttonBox button span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #111111;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .buttonBox button:hover {
+  transition: linear 0.2s all;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .buttonBox button:hover i {
+  opacity: 1;
+  margin-right: 10%;
+  display: block;
+  transition: linear 0.2s all;
+  font-size: 150%;
+  color: #d7eeef;
+  margin-top: 0rem;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentPart .buttonBox button:hover span {
+  transition: linear 0.2s all;
+  color: #d7eeef;
+  margin-right: 0%;
+}
+.portfolioSection .portfolioArticle .portfolioFive .picturePart div {
+  width: 100%;
+  height: 345px;
+  background: url("../img/ourhome.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentBox {
+  text-align: left;
+  margin-left: 10%;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentBox .iconList .iconFour {
+  background: url("../img/icon/nodejs.png") no-repeat;
+}
+.portfolioSection .portfolioArticle .portfolioFive .contentBox .iconList .iconFive {
+  background: url("../img/icon/mysql.png") no-repeat;
+}
+.portfolioSection .portfolioArticle .portfolioFive .buttonBox {
+  margin-left: 10%;
+}
+.portfolioSection .portfolioArticle .portfolioFive .buttonBox button {
+  border: 0.3rem solid #6565af;
+}
+.portfolioSection .portfolioArticle .portfolioFive .buttonBox button:hover {
+  border: 0.3rem solid #3f3f7c;
+  background: #3f3f7c;
+}
+.portfolioSection .portfolioArticle .portfolioSix {
+  display: flex;
+  width: 100%;
+  
+}
+.portfolioSection .portfolioArticle .portfolioSix .picturePart {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioSix .picturePart div {
+  width: 100%;
+  height: 80%;
+  background: url(../img/matrixCalculator.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 55%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .contentBox {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .contentBox ul {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .contentBox ul li {
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: #092252;
+  letter-spacing: -0.1rem;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .contentBox ul li span {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #092252;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .contentBox ul .iconList {
+  margin-top: 1%;
+  width: 100%;
+  height: 33.333%;
+  display: flex;
+  justify-content: flex-end;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .contentBox ul .iconList li {
+  width: 5.26%;
+  height: 100%;
+  margin-right: 3.5%;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .contentBox ul .iconList .iconOne {
+  background: url(../img/icon/jquery.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .contentBox ul .iconList .iconTwo {
+  background: url(../img/icon/sass.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .contentBox ul .iconList .iconThree {
+  background: url(../img/icon/pug.png) no-repeat;
+  background-size: contain;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .contentBox p {
+  font-size: 2.1rem;
+  font-weight: 300;
+  color: #888888;
+  line-height: 160%;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .buttonBox {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 84.696%;
+  height: 10%;
+  margin-top: 5%;
+  justify-content: flex-end;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .buttonBox button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  font-size: 1.5rem;
+  margin-left: 10%;
+  margin-right: 0%;
+  background: transparent;
+  border-radius: 1rem;
+  transition: linear 0.2s all;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .buttonBox button i {
+  opacity: 0;
+  font-size: 150%;
+  margin-left: -2.8%;
+  margin-top: 8%;
+  display: hidden;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .buttonBox button span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #111111;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .buttonBox button:hover {
+  transition: linear 0.2s all;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .buttonBox button:hover i {
+  opacity: 1;
+  display: block;
+  transition: linear 0.2s all;
+  font-size: 150%;
+  color: #d7eeef;
+  margin-top: 0rem;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .buttonBox button:hover span {
+  transition: linear 0.2s all;
+  color: #d7eeef;
+  margin-right: 0%;
+}
+.portfolioSection .portfolioArticle .portfolioSix .picturePart div {
+  width: 100%;
+  height: 345px;
+  background: url("../img/handon.jpg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart {
+  align-items: flex-end;
+  width: 55%;
+  height: 100%;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .contentBox {
+  width: 90%;
+  text-align: right;
+  align-items: flex-end;
+  margin-right: 10%;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .contentBox .iconFour {
+  background: url("../img/icon/nodejs.png") no-repeat;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .contentBox .iconFive {
+  background: url("../img/icon/mysql.png") no-repeat;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .buttonBox {
+  margin-right: 10%;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .buttonBox button {
+  border: 0.3rem solid #e6b53c;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .buttonBox button:hover {
+  border: 0.3rem solid #e6b53c;
+  background: #e6b53c;
+}
+.portfolioSection .portfolioArticle .portfolioSix .contentPart .buttonBox button:hover span {
+	color: #111;
+}

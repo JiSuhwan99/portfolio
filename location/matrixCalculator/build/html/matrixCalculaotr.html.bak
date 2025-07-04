@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+SC&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Goblin+One&amp;display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@600;700&amp;display=swap">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="shortcut icon" href="../css/img/matrixCalculatorFavicon.ico">
+    <link rel="stylesheet" href="../css/matrixCalculatorMain.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Matrix Calculator</title>
+  </head>
+  <body>
+    <section class="bigBox">
+      <article class="errorSection" id="errorSection">
+        <article class="errorBox" id="errorBox">
+          <div class="logoImage"></div><span>행렬을 다시 확인해주세요.</span>
+          <button class="errorExitButton" id="errorExitButton">닫기</button>
+        </article>
+      </article>
+      <header>
+        <div class="logoImage"></div>
+        <text class="logoText" id="logoText">Matrix Calculator</text>
+        <div></div>
+      </header>
+      <section>
+        <article class="bigArticle firstBigArticle">
+          <article class="buttonArticle">
+            <button id="leftOutputButton">출력</button>
+            <button id="leftRandomButton">랜덤</button>
+            <button id="leftResetButton">리셋</button>
+          </article>
+          <article class="inputArticle secondInputArticle">
+            <text>가로</text>
+            <input id="leftFirstInput" type="number" max="10" min="2" value="2">
+            <text>세로</text>
+            <input id="leftSecondInput" type="number" max="10" min="2" value="2">
+          </article>
+          <article class="matrixArticle" id="firstMatrixArticle"></article>
+        </article>
+        <article class="smallArticle firstSmallArticle">
+          <div>
+            <div class="smallCircle"><span class="operatorText" id="operatorBox"></span></div>
+          </div>
+        </article>
+        <article class="bigArticle secondArticle">
+          <article class="buttonArticle">
+            <button id="rightOutputButton">출력</button>
+            <button id="rightRandomButton">랜덤</button>
+            <button id="rightResetButton">리셋</button>
+          </article>
+          <article class="inputArticle secondInputArticle">
+            <text>가로</text>
+            <input id="rightFirstInput" type="number" max="10" min="2" value="2">
+            <text>세로</text>
+            <input id="rightSecondInput" type="number" max="10" min="2" value="2">
+          </article>
+          <article class="matrixArticle" id="secondMatrixArticle"></article>
+        </article>
+        <article class="smallArticle secondSmallArticle">
+          <div>
+            <div class="smallCircle"><span class="equalText operatorText">=</span></div>
+          </div>
+        </article>
+        <article class="bigArticle thirdArticle">
+          <article class="buttonArticle thirdButtonArticle" id="buttonArticle">
+            <button id="plusButton">더하기</button>
+            <button id="minusButton">빼기</button>
+            <button id="multiplyButton">곱하기</button>
+          </article>
+          <article class="matrixArticle thirdMatrixArticle" id="thirdMatrixArticle"></article>
+        </article>
+      </section>
+    </section>
+    <script type="text/javascript" src="../js/matrixCalculatorScript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+@import "reset.css";
+.aboutSection {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 1300px;
+}
+.aboutSection .aboutArticleLeft {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.aboutSection .aboutArticleLeft .aboutPictureOne {
+  width: 100%;
+  height: 55%;
+  background: url(../img/slidePictureThree.png) no-repeat;
+  background-size: contain;
+  background-position: left;
+  box-shadow: 0.4rem 0.4rem 0.1rem #a7a7a7;
+  width: 527px;
+  height: 440px;
+  transform: rotate(5deg) translate(-50px, -200px);
+}
+.aboutSection .aboutArticleRight {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 55%;
+  height: 100%;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.aboutSection .aboutArticleRight .aboutSubjectArticle {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 13%;
+  align-items: flex-end;
+}
+.aboutSection .aboutArticleRight .aboutSubjectArticle .aboutSubject {
+  display: flex;
+  flex-flow: column;\
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  flex-flow: row;
+  justify-content: flex-end;
+  margin-bottom: 10%;
+}
+.aboutSection .aboutArticleRight .aboutSubjectArticle .aboutSubject .aboutIcon {
+  width: 50px;
+  height: 115px;
+  background: url(../img/icon/subjectIcon.png) no-repeat;
+  background-size: contain;
+}
+.aboutSection .aboutArticleRight .aboutSubjectArticle .aboutSubject header {
+  font-family: "Sriracha", cursive;
+  display: flex;
+  flex-flow: column;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-left: 3%;
+  color: #111111;
+}
+.aboutSection .aboutArticleRight .aboutSubjectArticle .aboutSubject header span {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.aboutSection .aboutArticleRight .aboutContent {
+  width: 120%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
+.aboutSection .aboutArticleRight .aboutContent p {
+  font-weight: 300;
+  font-size: 2.1rem;
+  line-height: 180%;
+  text-align: right;
+  color: #888888;
+}
+.aboutSection .aboutArticleRight .aboutContent p span {
+  color: #092252;
+  font-weight: 500;
+  font-size: 2.1rem;
+}
+.aboutSection .aboutArticleRight .aboutContent p .toolText {
+  width: 120%;
+  letter-spacing: 0rem;
+  word-spacing: 0.1rem;
+  color: #092252;
+  font-weight: 500;
+  font-size: 2.1rem;
+}
+.aboutSection .aboutArticleRight .aboutContent span {
+  width: 120%;
+  letter-spacing: 0rem;
+  word-spacing: 0rem;
+  color: #092252;
+  font-weight: 500;
+  font-size: 2.1rem;
+}
+.aboutSection .aboutArticleRight .cowPictureArticle {
+  transform: translate(-30%, 25%);
+  width: 430px;
+  height: 400px;
+}
+.aboutSection .aboutArticleRight .cowPictureArticle .smallText {
+  color: #111111;
+  letter-spacing: 0rem;
+  font-size: 230%;
+  font-family: "Nanum Brush Script", cursive;
+  font-weight: bold;
+}
+.aboutSection .aboutArticleRight .cowPictureArticle .aboutCowPicture {
+  width: 100%;
+  height: 98%;
+  transform: rotate(-5deg);
+  transition: linear 0.15s all;
+  background: url(../img/bullimage.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}

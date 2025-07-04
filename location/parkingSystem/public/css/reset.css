@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+body a {
+  text-decoration: none;
+}
+body a .exitIcon {
+  color: rgb(250, 250, 250);
+}
+body button, body input {
+  border: none;
+  cursor: pointer;
+}
+body div, body header, body h1, body text {
+  cursor: default;
+}

@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <link rel="stylesheet" href="../css/test.css">
+    <title>리듬 팡팡</title>
+  </head>
+  <body>
+    <main>
+      <section class="mainSection" id="mainSection">
+        <article class="questionArticle" id="questionArticle">
+          <article>
+            <div></div>
+            <header>게임 방법</header>
+            <button id="cancelButton">X</button>
+          </article>
+          <article>
+            <div class="outLeftBox">
+              <div><img src="../css/images/arrowTop.png" alt="윗방향 화살표 이미지"><img src="../css/images/arrowLeft.png" alt="왼쪽 방향 화살표 이미지"><img src="../css/images/arrowDown.png" alt="아랫방향 화살표 이미지"><img src="../css/images/arrowRight.png" alt="오른쪽 방향 화살표 이미지"></div><img src="../css/images/spaceBar.png" alt="스페이스바 이미지">
+              <div class="lastSpaceImage" id="lastSpaceImage"></div>
+            </div>
+            <div class="outRightBox">
+              <p> <span>1. </span>이미지와 맞는 방향키를 눌러주세요.</p>
+              <p>스페이스바를 한 번 눌러주세요. </p>
+              <p>스페이스바를 마구 눌러 게이지를 채워주세요.</p>
+              <p> <span>2.</span>방향키를 잘못 누르면 점수가 차감됩니다.</p>
+              <p> <span>3.</span>제한시간 내에 라운드를 마쳐야 합니다.</p>
+            </div>
+          </article>
+        </article>
+        <article class="rankingArticle" id="rankingArticle">
+          <article>
+            <div></div>
+            <header>랭킹</header>
+            <button id="rankingCancelButton">X</button>
+          </article>
+          <ul> 
+            <li>순위 </li>
+            <li>이름</li>
+            <li>점수</li>
+            <li>날짜</li>
+          </ul>
+          <article id="rankingTable"></article>
+        </article>
+        <article class="mainInfoArticle" id="mainInfoArticle">
+          <article class="headerArticle" id="headerArticle">
+            <header>리듬 팡팡</header>
+          </article>
+          <article class="iconArticle" id="iconArticle"><img id="imageOne" src="../css/images/arrowTop.png" alt="윗방향 화살표 아이콘"><img id="imageTwo" src="../css/images/arrowLeft.png" alt="윗방향 화살표 아이콘"><img id="imageThree" src="../css/images/arrowDown.png" alt="윗방향 화살표 아이콘"><img id="imageFour" src="../css/images/arrowRight.png" alt="윗방향 화살표 아이콘"><img id="imageFive" src="../css/images/spaceBar.png" alt="윗방향 화살표 아이콘"></article>
+        </article>
+        <article class="mainArticle" id="mainArticle">
+          <button id="startButton"> 
+            <p>게임시작</p>
+          </button>
+          <button id="questionButton">
+            <p>게임방법</p>
+          </button>
+          <button id="rankingButton">
+            <p>랭킹보기</p>
+          </button>
+        </article>
+      </section>
+      <section class="gameSection" id="gameSection">
+        <div class="startMessage" id="startMessage">준비</div>
+        <article class="textArticle" id="textArticle">
+          <article class="rankSaveOutArticle" id="rankSaveOutArticle">
+            <article class="rankSaveArticle" id="rankSaveArticle">
+              <p>랭킹 저장</p>
+              <form method="post">
+                <div class="scoreSaveBox" id="scoreSaveBox">
+                  <p>스코어</p>
+                  <input class="scoreInput" id="scoreInput" type="text" name="saveScore" value="0000" readonly>
+                </div>
+                <div id="nameSaveBox">
+                  <p>이름</p>
+                  <input class="nameInput" id="nameInput" type="text" name="saveName">
+                </div>
+                <p id="nameMessage">이름은 숫자, 영어, 특수문자 포함 5글자까지 가능해요!</p>
+                <input class="submitButton" id="submitButton" type="button" value="저장하기">
+              </form>
+            </article>
+          </article>
+          <div class="blastImage" id="blastImage"></div>
+          <p>ROUND ? 완료!</p>
+          <article class="resultArticle" id="resultArticle">
+            <div>단계</div>
+            <p class="roundResult" id="roundResult"></p>
+            <div>점수</div>
+            <p id="scoreResult"></p>
+          </article>
+          <article class="buttonArticle" id="buttonArticle">
+            <button id="resetButton">처음으로</button>
+            <button id="nextButton">다음단계 </button>
+            <button id="rankButton">랭킹저장</button>
+          </article>
+        </article>
+        <article class="scoreArticle" id="scoreArticle">
+          <div class="homeButton" id="homeButton"><i class="xi-home"></i></div>
+          <div class="roundBox" id="roundBox"></div>
+          <div class="timeBox" id="timeBox"></div>
+          <div class="scoreBox" id="scoreBox"></div>
+        </article>
+        <article class="gameArticle" id="gameArticle"></article>
+      </section>
+    </main>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="../script/test.js"></script>
+</html>

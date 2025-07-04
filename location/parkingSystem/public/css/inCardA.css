@@ -1,0 +1,147 @@
+@import 'reset.css';
+body .inPageBg {
+  width: 120rem;
+  height: 150rem;
+  background-color: rgba(10, 10, 10, 0.4);
+  position: absolute;
+  display: block;
+  visibility: hidden;
+}
+body .inPageBg .inPageCheckArea {
+  border-radius: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -40rem;
+  margin-top: -40rem;
+  width: 80rem;
+  height: 80rem;
+  background-color: rgb(63, 63, 124);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body .inPageBg .inPageCheckArea .inPageContentArea {
+  border-radius: 1rem;
+  margin-top: 10rem;
+  width: 65rem;
+  height: 45rem;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+}
+body .inPageBg .inPageCheckArea .inPageContentArea .inPageInformationA {
+  width: 60rem;
+  height: 10rem;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+body .inPageBg .inPageCheckArea .inPageContentArea .inPageInformationA .carNumber {
+  width: 30rem;
+  height: 5rem;
+  background-color: rgb(245, 245, 245);
+  color: rgb(49, 49, 49);
+  font-size: 4rem;
+}
+body .inPageBg .inPageCheckArea .inPageContentArea .inPageInformationA .checkNumber {
+  width: 30rem;
+  height: 7rem;
+  background-color: rgb(245, 245, 245);
+  color: rgb(49, 49, 49);
+  font-size: 4.5rem;
+  border-radius: 2rem;
+  box-shadow: inset 0.8rem 0.8rem 2rem 0.3rem rgba(169, 169, 169, 0.25);
+}
+body .inPageBg .inPageCheckArea .inPageContentArea .inPageInformationB {
+  width: 60rem;
+  height: 10rem;
+  background-color: rgb(245, 245, 245);
+  color: rgb(49, 49, 49);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  text-align: center;
+  margin-top: 0rem;
+}
+body .inPageBg .inPageCheckArea .inPageContentArea .inPageInformationB .parkingArea {
+  width: 30rem;
+  height: 6rem;
+  background-color: rgb(245, 245, 245);
+  color: rgb(49, 49, 49);
+  font-size: 4rem;
+}
+body .inPageBg .inPageCheckArea .inPageContentArea .inPageInformationB .checkParking {
+  width: 30rem;
+  height: 7rem;
+  background-color: rgb(245, 245, 245);
+  color: rgb(49, 49, 49);
+  font-size: 4.5rem;
+  border-radius: 2rem;
+  box-shadow: inset 0.8rem 0.8rem 2rem 0.3rem rgba(169, 169, 169, 0.25);
+}
+body .inPageBg .inPageCheckArea .inPageContentArea .inPageInformationC {
+  width: 60rem;
+  height: 10rem;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+body .inPageBg .inPageCheckArea .inPageContentArea .inPageInformationC .checkTimeBox {
+  width: 30rem;
+  height: 5rem;
+  background-color: rgb(245, 245, 245);
+  color: rgb(49, 49, 49);
+  font-size: 4rem;
+}
+body .inPageBg .inPageCheckArea .inPageContentArea .inPageInformationC .inTime {
+  width: 30rem;
+  height: 7rem;
+  background-color: rgb(245, 245, 245);
+  color: rgb(49, 49, 49);
+  font-size: 4.5rem;
+  border-radius: 2rem;
+  box-shadow: inset 0.8rem 0.8rem 2rem 0.3rem rgba(169, 169, 169, 0.25);
+}
+body .inPageBg .inPageCheckArea .inPageContentArea .inPageNotice {
+  width: 60rem;
+  height: 5rem;
+  background-color: rgb(245, 245, 245);
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+  color: rgb(49, 49, 49);
+}
+body .inPageBg .inPageCheckArea .checkBTN {
+  width: 20rem;
+  height: 10rem;
+  margin-top: -5rem;
+  margin-left: 4rem;
+  background-color: rgb(228, 100, 117);
+  font-size: 5rem;
+  color: rgb(245, 245, 245);
+  border: 0.1rem solid gray;
+  font-weight: bold;
+  border-radius: 2rem;
+  box-shadow: inset 0.8rem 0.8rem 2rem 0.3rem rgba(255, 255, 255, 0.25);
+}
+body .inPageBg .inPageCheckArea .cancelBTN {
+  width: 20rem;
+  height: 10rem;
+  margin-top: -5rem;
+  margin-right: 4rem;
+  background-color: rgb(110, 124, 212);
+  border: none;
+  font-size: 5rem;
+  color: rgb(245, 245, 245);
+  font-weight: bold;
+  border-radius: 2rem;
+  box-shadow: inset 0.8rem 0.8rem 2rem 0.3rem rgba(255, 255, 255, 0.25);
+}

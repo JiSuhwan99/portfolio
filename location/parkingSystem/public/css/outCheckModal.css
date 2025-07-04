@@ -1,0 +1,266 @@
+@import 'reset.css';
+body .outCheckModal {
+  width: 120rem;
+  height: 150rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(10, 10, 10, 0.4);
+  visibility: hidden;
+  position: absolute;
+}
+body .outCheckModal .modalBox {
+  width: 110rem;
+  height: 130rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(63, 63, 124);
+}
+body .outCheckModal .modalBox .checkTitleText {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+body .outCheckModal .modalBox .checkTitleText .titleText {
+  font-size: 9rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(250, 250, 250);
+}
+body .outCheckModal .modalBox .modalMainBox {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection {
+  width: 90%;
+  height: 100%;
+  background-color: rgb(250, 250, 250);
+  box-shadow: inset -1.5rem -1.5rem 4rem 1rem rgba(224, 224, 224, 0.7);
+  border-radius: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .entranceTimeSection {
+  width: 85%;
+  height: 22%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .entranceTimeSection .entranceTimeText {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .entranceTimeSection .entranceTimeText p {
+  font-size: 6rem;
+  color: rgb(49, 49, 49);
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .entranceTimeSection .entranceTimeBox {
+  width: 60%;
+  height: 60%;
+  border-radius: 2rem;
+  box-shadow: inset 0.8rem 0.8rem 2rem 0.3rem rgba(169, 169, 169, 0.25);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .entranceTimeSection .entranceTimeBox .entranceTimeResultText {
+  width: 80%;
+  height: 100%;
+  color: black;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .entranceTimeSection .entranceTimeBox .entranceTimeResultText p {
+  font-size: 6rem;
+  color: rgb(49, 49, 49);
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .exitTimeSection {
+  width: 85%;
+  height: 22%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .exitTimeSection .exitTimeText {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .exitTimeSection .exitTimeText p {
+  font-size: 6rem;
+  color: rgb(49, 49, 49);
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .exitTimeSection .exitTimeBox {
+  width: 60%;
+  height: 60%;
+  border-radius: 2rem;
+  box-shadow: inset 0.8rem 0.8rem 2rem 0.3rem rgba(169, 169, 169, 0.25);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .exitTimeSection .exitTimeBox .exitTimeResultText {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .exitTimeSection .exitTimeBox .exitTimeResultText p {
+  font-size: 6rem;
+  color: rgb(49, 49, 49);
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .carNumberSection {
+  width: 85%;
+  height: 22%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .carNumberSection .carNumberText {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .carNumberSection .carNumberText p {
+  font-size: 6rem;
+  color: rgb(49, 49, 49);
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .carNumberSection .carNumberBox {
+  width: 60%;
+  height: 60%;
+  border-radius: 2rem;
+  box-shadow: inset 0.8rem 0.8rem 2rem 0.3rem rgba(169, 169, 169, 0.25);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .carNumberSection .carNumberBox .carNumberResultText {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .carNumberSection .carNumberBox .carNumberResultText p {
+  font-size: 6rem;
+  color: rgb(49, 49, 49);
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .settlementAmountSection {
+  width: 85%;
+  height: 22%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .settlementAmountSection .settlementAmountText {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .settlementAmountSection .settlementAmountText p {
+  font-size: 6rem;
+  color: rgb(49, 49, 49);
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .settlementAmountSection .settlementAmountBox {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: inset 0.8rem 0.8rem 2rem 0.3rem rgba(169, 169, 169, 0.25);
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .settlementAmountSection .settlementAmountBox .settlementAmountResultText {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+body .outCheckModal .modalBox .modalMainBox .modalMainTextSection .settlementAmountSection .settlementAmountBox .settlementAmountResultText p {
+  font-size: 6rem;
+  color: rgb(49, 49, 49);
+}
+body .outCheckModal .modalBox .modalCheckButtonBox {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body .outCheckModal .modalBox .modalCheckButtonBox .buttonSection {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+body .outCheckModal .modalBox .modalCheckButtonBox .buttonSection .paymentButton {
+  width: 40%;
+  height: 50%;
+  border-radius: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(110, 124, 212);
+  box-shadow: inset 0.8rem 0.8rem 2rem 0.3rem rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+}
+body .outCheckModal .modalBox .modalCheckButtonBox .buttonSection .paymentButton p {
+  font-size: 8rem;
+  color: rgb(250, 250, 250);
+}
+body .outCheckModal .modalBox .modalCheckButtonBox .buttonSection .cancelButton {
+  width: 40%;
+  height: 50%;
+  border-radius: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 100, 117);
+  box-shadow: inset 0.8rem 0.8rem 2rem 0.3rem rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+}
+body .outCheckModal .modalBox .modalCheckButtonBox .buttonSection .cancelButton p {
+  font-size: 8rem;
+  color: rgb(250, 250, 250);
+}

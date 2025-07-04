@@ -1,0 +1,101 @@
+@import "reset.css";
+body .mainPage {
+  width: 120rem;
+  height: 150rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(63, 63, 124);
+}
+body .mainPage .mainPageIcon {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+body .mainPage .mainPageIcon .mainPageIconBox {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  text-align: end;
+}
+body .mainPage .mainPageIcon .mainPageIconBox > i {
+  font-size: 10rem;
+  line-height: 15rem;
+  color: rgb(110, 124, 212);
+  margin-left: 2.5rem;
+  cursor: pointer;
+}
+body .mainPage .mainPageIcon .mainPageIconBox .messageBox {
+  background: rgba(250, 250, 250, 0.8);
+  width: 80rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.6rem;
+  border-radius: 3rem;
+  margin-top: 4rem;
+  visibility: hidden;
+}
+body .mainPageTitle {
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  line-height: 20rem;
+}
+body .mainPageTitle > h1 {
+  font-size: 12rem;
+  color: rgb(250, 250, 250);
+}
+body .mainPageIn, body .mainPageOut {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+body .mainPageIn > .inBtn, body .mainPageOut > .inBtn, body .mainPageOut > .outBtn {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: 0;
+  border-radius: 3rem;
+  box-shadow: inset 0.8rem 0.8rem 2rem 0.3rem rgba(255, 255, 255, 0.25);
+  background-color: rgb(110, 124, 212);
+  font-size: 13rem;
+  font-weight: 500;
+  color: rgb(49, 49, 49);
+  cursor: pointer;
+  position: relative;
+}
+body .mainPageIn > .inBtn a, body .mainPageOut > .inBtn a, body .mainPageOut > .outBtn a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body .mainPageOut > .outBtn {
+  background-color: rgb(228, 100, 117);
+}
+body .mainPageOut > .outBtn a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body .mainPageInfo {
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  line-height: 20rem;
+}
+body .mainPageInfo > text {
+  font-size: 7rem;
+  color: rgb(250, 250, 250);
+}

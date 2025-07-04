@@ -1,0 +1,123 @@
+@import "reset.css";
+.introSection {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: row;
+}
+.introSection .textArticle {
+  display: flex;
+  width: 55%;
+  height: 95%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.introSection .textArticle .introSubject {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: row;
+  width: 100%;
+  height: 115px;
+  margin-top: 0rem;
+}
+.introSection .textArticle .introSubject .introIcon {
+  width: 6.993%;
+  height: 100%;
+  background: url(../img/icon/subjectIcon.png) no-repeat;
+  background-size: contain;
+}
+.introSection .textArticle .introSubject header {
+  width: 90%;
+  font-family: "Sriracha", cursive;
+  display: flex;
+  flex-flow: column;
+  margin-left: 3%;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #111111;
+}
+.introSection .textArticle .introSubject header span {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.introSection .textArticle .introSubject header div {
+  width: 10%;
+  height: 100%;
+  background: red;
+}
+.introSection .textArticle .introContent {
+  width: 100%;
+  height: 89.7365%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.introSection .textArticle .introContent p {
+  margin-top: 10%;
+  font-weight: 300;
+  font-size: 2.1rem;
+  line-height: 180%;
+  color: #888888;
+}
+.introSection .textArticle .introContent p span {
+  color: #092252;
+  font-weight: 500;
+  font-size: 2.1rem;
+}
+.introSection .textArticle .introContent p .bigName {
+  font-size: 3.4rem;
+}
+.introSection .textArticle .introContent .introFlowerPicture {
+  width: 400px;
+  height: 400px;
+  background: url(../img/flower_vase.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.introSection .smallText {
+  font-size: 230%;
+  font-family: "Nanum Brush Script", cursive;
+  font-weight: bold;
+  color: #111111;
+  letter-spacing: 0rem;
+  margin-bottom: 20px;
+  position: absolute;
+  bottom: 400px;
+  left: 0;
+}
+.introSection .pictureArticle {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.introSection .pictureArticle .introPictureOne {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 40%;
+  bottom: 10%;
+  background: url(../img/babyPicture.png) no-repeat;
+  background-size: contain;
+  animation: picRotateTwo 4s infinite;
+}
+.introSection .pictureArticle .introPictureTwo {
+  width: 400px;
+  height: 800px;
+  position: absolute;
+  right: 0%;
+  bottom: 10%;
+  background: url(../img/jisuhwanPicture2.png) no-repeat;
+  background-size: contain;
+  animation: picRotate 5s infinite;
+}

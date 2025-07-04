@@ -1,0 +1,105 @@
+doctype html
+html(lang="ko")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css")
+        link(rel="stylesheet", href="../css/test.css")
+        title 寃뚯엫 �대쫫
+    body
+        main
+            section.mainSection#mainSection
+                article#questionArticle.questionArticle
+                        article
+                            div
+                            header 寃뚯엫 諛⑸쾿
+                            button#cancelButton
+                                i.xi-close
+                        article
+                            div.outLeftBox
+                                div
+                                    img(src="../css/images/arrowTop.png", alt="�쀫갑�� �붿궡�� �대�吏�")
+                                    img(src="../css/images/arrowLeft.png", alt="�쇱そ 諛⑺뼢 �붿궡�� �대�吏�")
+                                    img(src="../css/images/arrowDown.png", alt="�꾨옯諛⑺뼢 �붿궡�� �대�吏�")
+                                    img(src="../css/images/arrowRight.png", alt="�ㅻⅨ履� 諛⑺뼢 �붿궡�� �대�吏�")
+                                img(src="../css/images/spaceBar.png", alt="�ㅽ럹�댁뒪諛� �대�吏�")
+                                div.lastSpaceImage#lastSpaceImage
+                            div.outRightBox
+                                p 
+                                    span 1. 
+                                    | �대�吏��� 留욌뒗 諛⑺뼢�ㅻ� �뚮윭二쇱꽭��.
+                                p �ㅽ럹�댁뒪諛붾� �� 踰� �뚮윭二쇱꽭��. 
+                                p �ㅽ럹�댁뒪諛붾� 留덇뎄 �뚮윭 寃뚯씠吏�瑜� 梨꾩썙二쇱꽭��.
+                                p 
+                                    span 2.
+                                    | 諛⑺뼢�ㅻ� �섎せ �꾨Ⅴ硫� �먯닔媛� 源롮엯�덈떎.
+                                p 
+                                    span 3.
+                                    | �쒗븳�쒓컙 �댁뿉 �쇱슫�쒕� 留덉퀜�� �⑸땲��.
+                article#rankingArticle.rankingArticle
+                    article
+                        div
+                        header ��궧
+                        button#rankingCancelButton
+                            i.xi-close
+                    ul 
+                        li �쒖쐞 
+                        li �대쫫
+                        li �먯닔
+                        li �좎쭨
+                    article#rankingTable
+                article#mainInfoArticle.mainInfoArticle
+                    article#headerArticle.headerArticle
+                        header 寃뚯엫 �대쫫
+                    article#iconArticle.iconArticle
+                        img( id="imageOne" src="../css/images/arrowTop.png" alt="�쀫갑�� �붿궡�� �꾩씠肄�")
+                        img( id="imageTwo" src="../css/images/arrowLeft.png" alt="�쀫갑�� �붿궡�� �꾩씠肄�")
+                        img( id="imageThree" src="../css/images/arrowDown.png" alt="�쀫갑�� �붿궡�� �꾩씠肄�")
+                        img( id="imageFour" src="../css/images/arrowRight.png" alt="�쀫갑�� �붿궡�� �꾩씠肄�")
+                        img( id="imageFive" src="../css/images/spaceBar.png" alt="�쀫갑�� �붿궡�� �꾩씠肄�")
+                article.mainArticle#mainArticle
+                    button#startButton 
+                        p 寃뚯엫�쒖옉
+                    button#questionButton
+                        p 寃뚯엫諛⑸쾿
+                    button#rankingButton
+                        p ��궧蹂닿린
+            section.gameSection#gameSection
+                div.startMessage#startMessage 以�鍮�
+                article#textArticle.textArticle
+                    article#rankSaveOutArticle.rankSaveOutArticle
+                        article#rankSaveArticle.rankSaveArticle
+                            p ��궧 ����
+                            form(method="post")
+                                div#scoreSaveBox.scoreSaveBox
+                                    p �ㅼ퐫��
+                                    input(id="scoreInput" class="scoreInput" type="text" name="saveScore" value="0000" readonly)
+                                div#nameSaveBox
+                                    p �대쫫
+                                    input(id="nameInput" class="nameInput" type="text" name="saveName")
+                                p#nameMessage �대쫫�� �レ옄, �곸뼱, �뱀닔臾몄옄 �ы븿 5湲��먭퉴吏� 媛��ν빐��!
+                                input(id="submitButton" class="submitButton" type="button" value="���ν븯湲�")
+                    div#blastImage.blastImage
+                    p ROUND ? �꾨즺!
+                    article#resultArticle.resultArticle
+                        div �④퀎
+                        p#roundResult.roundResult
+                        div �먯닔
+                        p#scoreResult
+                    article#buttonArticle.buttonArticle
+                        button#resetButton 泥섏쓬�쇰줈
+                        button#nextButton �ㅼ쓬�④퀎 
+                        button#rankButton ��궧����
+                article#scoreArticle.scoreArticle
+                    div.homeButton#homeButton
+                        i.xi-home
+                    div#roundBox.roundBox
+                    div#timeBox.timeBox
+                    div#scoreBox.scoreBox
+                article#gameArticle.gameArticle
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js")
+    script(src="../script/test.js")

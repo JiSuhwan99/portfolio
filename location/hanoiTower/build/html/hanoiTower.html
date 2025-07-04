@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../css/hanoiTower.css">
+    <link rel="shortcut icon" href="../img/hanoiTowerFavicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/hanoiTowerJs.js"></script>
+    <title>HANOI TOWER</title>
+  </head>
+  <body>
+    <main class="hanoiMain" id="hanoiMain">
+      <!--Error Section-->
+      <section class="errorSection" id="errorSection">
+        <article class="errorArticle" id="errorArticle">
+          <p>0부터 5까지의 숫자를 입력해주세요.</p>
+        </article>
+      </section>
+      <!--Main Section-->
+      <header>HANOI TOWER</header>
+      <section class="hanoiSection" id="hanoiSection">
+        <section class="towerSection">
+          <article class="firstTowerArtlce backTower">
+            <article class="towerArticle" id="firstTower"></article>
+            <div class="centerBox"></div>
+          </article>
+          <article class="secondTowerArticle backTower">
+            <article class="towerArticle" id="secondTower"></article>
+            <div class="centerBox"></div>
+          </article>
+          <article class="thirdTowerArticle backTower">
+            <article class="towerArticle" id="thirdTower"></article>
+            <div class="centerBox"></div>
+          </article>
+        </section>
+        <!--Button Section-->
+        <section class="buttonSection" id="buttonSection">
+          <article class="inputButtonArticle" id="inputButtonArticle">
+            <article class="inputArticle" id="inputArticle">
+              <p id="keyboardMessage"><i class="xi-keyboard-o keyboardIcon"></i>타워 층수 입력</p>
+              <input id="inputNumber" type="number">
+            </article>
+            <article class="buttonArticle" id="buttonArticle">
+              <p id="startMessage"><i class="xi-mouse mouseIcon"></i>클릭 시 시작합니다. </p>
+              <button class="startButton" id="startButton">시작하기</button>
+              <button class="stopButton" id="stopButton">초기화</button>
+            </article>
+          </article>
+          <p class="speedMessage" id="speedMessage"><i class="xi-alarm-clock-o speedIcon"></i>이동속도 설정</p>
+          <article class="speedArticle" id="speedArticle">
+            <button class="fastButton" id="fastButton">빠르게</button>
+            <button class="defaultButton" id="defaultButton">보통</button>
+            <button class="slowButton" id="slowButton">느리게</button>
+          </article>
+          <p class="logMessage" id="logMessage">진행상황 로그</p>
+          <div class="progressBox" id="progressBox"></div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

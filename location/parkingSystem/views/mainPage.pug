@@ -1,0 +1,62 @@
+doctype html
+html(lang="ko")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    //viewport link
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //xeicon link
+    link(rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/@xpressengine/xeicon@2.3.3/xeicon.min.css")
+    //font link
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap")
+    //css link
+    link(rel="stylesheet" href="/css/mainPage.css")
+    link(rel="stylesheet" href="/css/mainLogin.css")
+    link(rel="icon" href="/image/parkingSystemFavicon.ico")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js")
+    script(src="/js/numPad.js")
+    script(src="/js/commonScript.js")
+    title 주차장 관리 시스템
+  body
+  
+    main.mainPage#mainPage
+      section.mainPageIcon#mainPageIcon
+        article.mainPageIconBox#mainPageIconBox
+          i.xi-info-o
+          div.messageBox �대┃�섏떆硫� '愿�由� �섏씠吏�'濡� �대룞�⑸땲��.
+      section.mainPageTitle
+        h1 주차장 관리 시스템
+      section.mainPageIn#mainPageIn
+        button(id="inBtn" class="inBtn" href="/in") 입차신청
+      section.mainPageOut#mainPageOut
+        button(id="outBtn" class="outBtn" href="/out") 출차신청
+      section.mainPageInfo#mainPageInfo
+        text *주차요금 30분 / 2,000원
+  
+    main.loginPage#loginPage
+      section.loginPageClose#loginPageClose
+        article.loginPageIconBox#loginPageIconBox
+          i.xi-close-circle-o
+      section.loginPagePwd#loginPagePwd
+        div.messageBox 湲곕낯 鍮꾨�踰덊샇�� '9999' �낅땲��.
+        input(type="text" class="inputBox" id="inputBox" placeholder="鍮꾨�踰덊샇瑜� �낅젰�� 二쇱꽭��." name="inNum" maxlength="4" )
+      section.loginPageNum#loginPageNum
+        article
+          button#pwdNum1 1
+          button#pwdNum2 2
+          button#pwdNum3 3
+        article
+          button#pwdNum4 4
+          button#pwdNum5 5
+          button#pwdNum6 6
+        article
+          button#pwdNum7 7
+          button#pwdNum8 8
+          button#pwdNum9 9
+        article
+          button.pwdReset#pwdReset 珥덇린��
+          button#pwdNum0 0
+          button.pwdDelete#pwdDelete
+            img.deleteBtn(src="/image/backspace.svg" alt="��젣 紐⑥뼇�� �대�吏� �낅땲��.")

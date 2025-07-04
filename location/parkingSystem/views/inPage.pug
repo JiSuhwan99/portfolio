@@ -1,0 +1,162 @@
+doctype html
+html(lang="ko")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xpressengine/xeicon@2.3.3/xeicon.min.css")
+        link(rel="stylesheet" href="/css/inPage.css" type="text/css")
+        link(rel="stylesheet" href="/css/inCheckA.css" type="text/css")
+        link(rel="stylesheet" href="/css/inCheckB.css" type="text/css")
+        link(rel="icon" href="/image/parkingSystemFavicon.ico")
+        script(src="https://unpkg.com/hangul-js" type="text/javascript")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js")
+        script(src="/js/inKeyPad.js")
+        script(src="/js/timerScript.js")
+        script(src="/js/timeTable.js")
+        script(src="/js/commonScript.js")
+        title 二쇱감�� 愿�由� �쒖뒪��
+    body
+        main(id="inPage" class="inPage")
+            article(class="errorArticle" id="errorArticle") 二쇱감 援ъ뿭瑜� �좏깮�� �� <br> 異쒖감 �좎껌�� �댁＜�몄슂.
+            section(id="topSection", class="topSection")
+                article(class="headerArticle")
+                    article
+                    article(id="resetTimer") 000
+                    article
+                    header 입차 관리
+                    article
+                    a(href="/main")
+                        i(class="xi-close-circle-o exitIcon" id="exitIcon")
+                    article 
+                article(class="parkingStatus" id="parkingStatus")
+                    article(class="parkingArticleOne")
+                        div(class="loadBox topLoadBox")
+                            i(class="xi-long-arrow-up arrowIcon topArrow") 
+                        article(class="parkingBoxArticle")
+                            div(id="parkingBox aOne" class="parkingBox") A-1 
+                            div(id="parkingBox aTwo" class="parkingBox") A-2
+                            div(id="parkingBox aThree" class="parkingBox") A-3
+                            div(id="parkingBox aFour" class="parkingBox") A-4
+                            div(id="parkingBox aFive" class="parkingBox") A-5
+                    div(class="loadArticle topLoadArticle")
+                    article(class="parkingArticleTwo")
+                        article(class="parkingBoxArticle") 
+                            div(id="parkingBox bOne" class="parkingBox") B-1
+                            div(id="parkingBox bTwo" class="parkingBox") B-2
+                            div(id="parkingBox bThree" class="parkingBox") B-3
+                            div(id="parkingBox bFour" class="parkingBox") B-4
+                            div(id="parkingBox bFive" class="parkingBox") B-5
+                        div(class="loadBox") 
+                    article(class="parkingArticleThree")
+                        article(class="parkingBoxArticle") 
+                            div(id="parkingBox cOne" class="parkingBox") C-1
+                            div(id="parkingBox cTwo" class="parkingBox") C-2
+                            div(id="parkingBox cThree" class="parkingBox") C-3
+                            div(id="parkingBox cFour" class="parkingBox") C-4
+                            div(id="parkingBox cFive" class="parkingBox") C-5
+                        div(class="loadBox") 
+                    div(class="loadArticle bottomLoadArticle")
+                    article(class="parkingArticleFour")
+                        div(class="loadBox bottomLoadBox")
+                            i(class="xi-long-arrow-up arrowIcon") 
+                        article(class="parkingBoxArticle") 
+                            div(id="parkingBox dOne" class="parkingBox") D-1
+                            div(id="parkingBox dTwo" class="parkingBox") D-2
+                            div(id="parkingBox dThree" class="parkingBox") D-3
+                            div(id="parkingBox dFour" class="parkingBox") D-4
+                            div(id="parkingBox dFive" class="parkingBox") D-5
+            section(id="midSection", class="midSection")
+                article(id="timeArticle", class="timeArticle")
+                    article
+                        div(class="timeTextBox") 입차 시간
+                        div(class="timeBox clickTime" id="clickTime") 00:00:00 
+                    article
+                        div(class="timeTextBox") 주차 시간
+                        div(class="timeBox clickTime nowTime" id="nowTime")
+                article(id="inputArticle", class="inputArticle")
+                    p.messageBox
+                        | �ㅽ뙣�쒕� �댁슜�� 李⑤웾 踰덊샇瑜� �낅젰�� ��
+                        br
+                        | '李⑤웾�뺣낫議고쉶'瑜� �댁＜�몄슂. (��: 00媛�0000)
+                    input(type="text" id="inText" value="" name="inText" disabled)
+                    button(id="inButton" class="inButton") ㅇㅇㅇㅇ
+            section(id="bottomSection", class="bottomSection")
+                article(id="keyPad", class="keyPad")
+                    article(id="keyNumbers" class="keyNumbers")
+                        button 1
+                        button 2
+                        button 3
+                        button 4
+                        button 5
+                        button 6
+                        button 7
+                        button 8
+                        button 9
+                        button 0
+                    article(id="keyPadOne" class="keyPadOne")
+                        button ㅂ
+                        button ㅈ
+                        button ㄷ
+                        button ㄱ
+                        button ㅅ
+                        button ㅛ
+                        button ㅕ
+                        button ㅑ
+                        button ㅐ
+                        button ㅔ
+                    article(id="keyPadTwo" class="keyPadTwo")
+                        button ㅁ
+                        button ㄴ
+                        button ㅇ
+                        button ㄹ
+                        button ㅎ
+                        button ㅗ
+                        button ㅓ 
+                        button ㅏ
+                        button ㅣ
+                    article(id="keyPadThree" class="keyPadThree")
+                        button ㅋ
+                        button ㅌ
+                        button ㅊ
+                        button ㅍ 
+                        button ㅠ
+                        button ㅜ
+                        button ㅡ
+                    article(id="keyPadFour" class="keyPadFour")
+                        button(id="resetButton" class="resetButton") 초기화
+                        button(id="enterButton" class="enterButton") 차 량 번 호 조 회
+                        button(id="deleteButton" class="deleteButton")
+                            div(id="backspaceIcon" class="backspaceIcon")
+        
+        section.inPageBg#inPageBg
+            article.inPageCheckArea#inPageCheckArea
+                .inPageContentArea#inPageContentArea
+                    .inPageInformationA#inPageInformationA
+                        .carNumber#carNumber 李⑤웾 踰덊샇
+                        .checkNumber#checkNumber
+                    .inPageInformationB#inPageInformationB
+                        .parkingArea#parkingArea 二쇱감 援ъ뿭
+                        .checkParking#checkParking 
+                    .inPageInformationC#inPageInformationC
+                        .checkTimeBox#checkTimeBox �낆감 �쒓컙
+                        .inTime#inTime 
+                    .inPageNotice#inPageNotice �낅젰�섏떊 �뺣낫瑜� �뺤씤�� 二쇱꽭��.
+                button.cancelBTN#checkBTN �뺤씤
+                button.checkBTN#cancelBTN 痍⑥냼
+
+        section.inPageBBg#inPageBBg
+            article.inPageBCheckArea#inPageBCheckArea
+                .inPageBnoticeArea#inPageBnoticeArea �낆감 �좎껌�� �꾨즺�섏뿀�듬땲��.
+                form(class="inPageContentAreaB" method="post")
+                    input(name="useArea" type="text")
+                    article
+                        .carNumInformation#carNumInformation 李⑤웾 踰덊샇
+                            input(name="carNumber" type="text")
+                        .entranceTimeInformation#entranceTimeInformation �낆감 �좎껌 �쒓컙
+                            input(name="entranceTime" type="text" )
+                    a(href="/main")
+                        input(type="submit" value="�뺤씤")

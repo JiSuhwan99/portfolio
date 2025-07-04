@@ -1,0 +1,101 @@
+@import "reset.css";
+body .loginPage {
+  position: absolute;
+  visibility: hidden;
+  width: 120rem;
+  height: 150rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(63, 63, 124);
+}
+body .loginPage > :first-child {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+body .loginPage > :first-child > .loginPageIconBox {
+  width: 15%;
+  height: 100%;
+  text-align: center;
+}
+body .loginPage > :first-child > .loginPageIconBox > i {
+  font-size: 10rem;
+  line-height: 14rem;
+  color: rgb(250, 250, 250);
+  cursor: pointer;
+}
+body .loginPage .loginPagePwd {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+body .loginPage .loginPagePwd .messageBox {
+  width: 70%;
+  height: 6rem;
+  color: rgb(237, 225, 177);
+  margin-bottom: 2.6rem;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+}
+body .loginPage .loginPagePwd .inputBox {
+  width: 70%;
+  height: 60%;
+  font-size: 6rem;
+  text-align: center;
+  line-height: 13rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(250, 250, 250);
+  box-shadow: inset 0.8rem 0.8rem 2rem 0.3rem rgba(169, 169, 169, 0.25);
+  color: rgb(49, 49, 49);
+}
+body .loginPage > .loginPageNum {
+  width: 100%;
+  height: 62%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+body .loginPage > .loginPageNum article {
+  width: 65%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+body .loginPage > .loginPageNum article > button {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: 0;
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 10rem;
+  line-height: 18rem;
+  color: rgb(49, 49, 49);
+  box-shadow: inset 0.8rem 0.8rem 2rem 0.3rem rgba(169, 169, 169, 0.25);
+  background-color: rgb(250, 250, 250);
+  cursor: pointer;
+}
+body .loginPage > .loginPageNum article .pwdReset {
+  font-size: 5rem;
+}
+body .loginPage > .loginPageNum article .deleteBtn {
+  width: 50%;
+  height: 50%;
+}

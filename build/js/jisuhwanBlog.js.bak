@@ -1,0 +1,222 @@
+class SlideArticle {
+    constructor(jsonPath) {
+        this.jsonPath = jsonPath;
+    }
+
+    slideStart() {
+        let jsonArray = [];
+        $.getJSON(this.jsonPath, (jsonData) => {
+            $.each(jsonData, function(value,object){
+                jsonArray.push(object);
+                return jsonArray;
+            });
+        });
+        let i = 0;
+        setInterval(()=>{
+            if(i == 3) {i = 0};
+                //$(`#aboutPictureOne`).css(`background`,`url(${jsonArray[i]})`);
+            i++;
+        },3000);
+    }
+}
+
+class DecorativeEffect {
+    constructor() {}
+
+    picturesEffect() {
+
+        let i=0;
+        setInterval(()=>{
+            let intervalTimer = i % 2;
+            switch(intervalTimer) {
+                case 1 :
+                    $(`#introPictureOne`).css(`transform`,`translate(-25%, 5%) rotate(5deg)`);
+                    $(`#contactPicture`).css(`transform`,`translate(-100%,-15%)`);
+                    $(`#pictureArticle`).css(`transform`,`translate(0%, 16%) rotate(-2deg)`);
+                    $(`#introFlowerPicture`).css(`transform`,`translate(20%,0%) rotate(5deg)`);
+                    $(`#aboutCowPicture`).css(`transform`,`rotate(-5deg)`);
+                    $(`#aboutPictureOne`).css(`transform`,`rotate(5deg)`);
+                    $(`#starArticle`).css(`transform`,`translate(200%,-380%) rotate(-5deg)`);
+                break;
+                case 0 :
+                    $(`#introPictureOne`).css(`transform`,`translate(-25%, 5%) rotate(0deg)`);
+                    $(`#contactPicture`).css(`transform`,`translate(-100%,-15%) rotate(2deg)`);
+                    $(`#pictureArticle`).css(`transform`,`translate(0%, 16%) rotate(5deg)`);
+                    $(`#introFlowerPicture`).css(`transform`,`translate(20%,0%) rotate(0deg)`);
+                    $(`#aboutCowPicture`).css(`transform`,`rotate(0deg)`);
+                    $(`#aboutPictureOne`).css(`transform`,`rotate(0deg)`);
+                    $(`#starArticle`).css(`transform`,`translate(200%,-380%) rotate(0deg)`);
+                break;
+            }
+            i++;
+        },1500);
+    }
+
+    cursorDecorative() {
+        $(document).mouseover(()=>{
+            $(document).mousemove((e)=> {
+                let cursorX = e.clientX + 10;
+                let cursorY = e.clientY + 10;
+                $(`#blogCursor`).css(`left`,`${cursorX}px`);
+                $(`#blogCursor`).css(`top`,`${cursorY}px`);
+            })
+        })
+    }
+
+    starEffect() {
+    let j=0;
+    setInterval(()=>{
+        if(j == 16) {j=0};
+
+        switch(j) {
+        case 0 :
+            $(`#starOne`).css(`opacity`,`1`);
+            break;
+        case 1 :
+            $(`#starTwo`).css(`opacity`,`1`);
+            break;
+        case 2 :
+            $(`#starThree`).css(`opacity`,`1`);
+            break;
+        case 3 :
+            $(`#starFour`).css(`opacity`,`1`);
+            break;
+        case 4 :
+            $(`#starFive`).css(`opacity`,`1`);
+            break;
+        case 6 :
+            $(`#starColor`).css(`opacity`,`1`);
+            break;
+        case 13 :
+            $(`#starArticle div`).css(`opacity`,`0`);
+            break;
+        }
+        j++;
+    },1000);
+    }
+}
+class MenuArticle {
+    constructor(scrollClientHeight,aboutOffset,portfolioOffset) {
+        this.scrollClientHeight = scrollClientHeight;
+        this.aboutOffset = aboutOffset;
+        this.portfolioOffset = portfolioOffset;
+    }
+    menuBoxClick() {
+        $(`#menuIcon`).click(()=>{
+            let menuHeight = $(`#menuList`).height();
+            if( menuHeight <= 0) {
+                $(`#menuList`).css(`height`,`100%`);
+                $(`#menuList`).css(`opacity`,`1`);
+                $(`#menuIcon`).css(`width`,`25%`);
+                $(`#menuIcon`).css(`height`,`35%`);
+                $(`#menuIcon`).css(`transform`,`rotate(90deg)`);
+            } else {
+                $(`#menuList`).css(`height`,`0%`);
+                $(`#menuList`).css(`opacity`,`0`);
+                $(`#menuIcon`).css(`width`,`40%`);
+                $(`#menuIcon`).css(`height`,`55%`);
+                $(`#menuIcon`).css(`transform`,`rotate(0deg)`);
+            }  
+        });
+    }
+
+    menuClick() {
+        $(`#introButton`).click(()=>{
+            console.log(1);
+            $(`html, body`).animate({ scrollTop: 0 },300,'swing');
+        });
+        $(`#aboutButton`).click(()=>{
+            console.log(1);
+            $(`html, body`).animate({ scrollTop: this.aboutOffset.top },300,'swing');
+        });
+        $(`#portfolioButton`).click(()=>{
+            console.log(1);
+            $(`html, body`).animate({ scrollTop: this.portfolioOffset.top },300,'swing');
+        });
+        $(`#contactButton`).click(()=>{
+            console.log(1);
+            $(`html, body`).animate({ scrollTop: this.scrollClientHeight },300,'swing');
+        });
+    }
+}
+class PortfolioButton {
+    constructor(clickedButton) {
+        this.clickedButton = clickedButton;
+    }
+    buttonClick() {
+        $(`#locationButtonOne`).click(()=>{
+            window.open("/location/matrixCalculator/build/html/matrixCalculaotr.html")
+        });
+        $(`#downloadButtonOne`).click(()=>{
+            window.open("../../location/pdf/matrixCalculatorPDF.pdf")
+        });
+        $(`#locationButtonTwo`).click(()=>{
+            window.open("/location/hanoiTower/build/html/hanoiTower.html")
+        });
+        $(`#downloadButtonTwo`).click(()=>{
+            window.open("../../location/pdf/hanoiTowerPDF.pdf")
+        });
+        $(`#locationButtonThree`).click(()=>{
+            window.open("http://kkms4001.iptime.org:55528")
+        });
+        $(`#downloadButtonThree`).click(()=>{
+            window.open("../../location/pdf/parkingSystemPDF.pdf")
+        });
+        $(`#locationButtonFour`).click(()=>{
+            window.open("http://kkms4001.iptime.org:30028")
+        });
+        $(`#downloadButtonFour`).click(()=>{
+            window.open("../../location/pdf/rhythmPangPangPDF.pdf")
+        });
+        $(`#locationButtonSix`).click(()=>{
+            window.open("https://www.han-don.com/")
+        });
+			https://www.han-don.com/
+    }
+}
+
+$(document).ready(() => {
+        $(`#introButton`).click(()=>{
+            console.log(1);
+            $(`html, body`).animate({ scrollTop: 0 },300,'swing');
+        });
+        $(`#aboutButton`).click(()=>{
+            console.log(1);
+            $(`html, body`).animate({ scrollTop: this.aboutOffset },300,'swing');
+        });
+        $(`#portfolioButton`).click(()=>{
+            console.log(1);
+            $(`html, body`).animate({ scrollTop: this.portfolioOffset },300,'swing');
+        });
+        $(`#contactButton`).click(()=>{
+            console.log(1);
+            $(`html, body`).animate({ scrollTop: this.scrollClientHeight },300,'swing');
+        });
+
+
+    let scrollHeight = $(`#blogSection`).prop('scrollHeight');
+    let clientHeight = $(`html, body`).prop('clientHeight');
+    let scrollClientHeight = scrollHeight - clientHeight;
+    let aboutOffset = $(`#aboutArticleRight`).offset();
+    let portfolioOffset = $(`#portfolioSection`).offset();
+    let introIconOffset = $(`#introIcon`).offset();
+
+    $(`#menuArticle`).css(`top`,`${introIconOffset.top}px`);
+
+    let defocrativeEffect = new DecorativeEffect();
+    //defocrativeEffect.picturesEffect();
+    defocrativeEffect.cursorDecorative();
+    defocrativeEffect.starEffect();
+    
+    let menuArticle = new MenuArticle(scrollClientHeight,aboutOffset, portfolioOffset);
+    menuArticle.menuBoxClick();
+    menuArticle.menuClick();
+
+    let portfolioButton = new PortfolioButton();
+    portfolioButton.buttonClick();
+    
+    let aboutSectionSlider = new SlideArticle(`../json/slideJSON.json`);
+    aboutSectionSlider.slideStart();
+
+
+});

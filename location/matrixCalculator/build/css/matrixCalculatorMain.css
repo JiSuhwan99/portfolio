@@ -1,0 +1,260 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bigBox {
+  background: #0e2460;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.bigBox .errorSection {
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: rgba(10, 10, 10, 0.5);
+  display: flex;
+  justify-content: center;
+}
+.bigBox .errorSection .errorBox {
+  width: 35vmin;
+  height: 20vmin;
+  background: #f6f6f6;
+  margin-top: 5%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5rem;
+  border: 1.5vmin solid #dbdbdb;
+  padding: 1%;
+  transition: linear 0.05s all;
+}
+.bigBox .errorSection .errorBox div {
+  background: url("../css/img/iconblack.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 40%;
+}
+.bigBox .errorSection .errorBox span {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111111;
+  text-align: center;
+  font-size: 2.3vmin;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+.bigBox .errorSection .errorBox button {
+  width: 30%;
+  height: 20%;
+  border-radius: 5vmin;
+  border: none;
+  font-weight: 400;
+  font-size: 2.3vmin;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  background: #111111;
+  color: #f6f6f6;
+}
+.bigBox .errorSection .errorBox button:hover {
+  background: #90aefa;
+}
+.bigBox header {
+  width: 90%;
+  height: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bigBox header div:first-child {
+  width: 12.5vmin;
+  height: 12.5vmin;
+  border-radius: 15%;
+  margin-right: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../css/img/logoimage.png");
+  background-size: contain;
+}
+.bigBox header text {
+  width: 27%;
+  height: 100;
+  font-size: 5.25vmin;
+  font-family: "Goblin One", cursive;
+  text-shadow: 0rem 0rem 3rem #8484da;
+  color: #e82d2a;
+}
+.bigBox section {
+  width: 90%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bigBox section .bigArticle {
+  width: 30%;
+  height: 100%;
+}
+.bigBox section .bigArticle .buttonArticle {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.bigBox section .bigArticle .buttonArticle button {
+  background: linear-gradient(#5a330f, #613913);
+  border: 0.2rem solid #45280d;
+  width: 20%;
+  height: 4vmin;
+  border-radius: 1rem;
+  line-height: 100%;
+  text-align: center;
+  box-shadow: 0rem 0rem 0.8rem #21419b;
+  color: #e7e7e7;
+  transition: all 0.1s linear;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 1.8vmin;
+  font-weight: 700;
+}
+.bigBox section .bigArticle .buttonArticle :hover {
+  background: linear-gradient(#563414, #875526);
+  color: #e1dbd0;
+  cursor: pointer;
+}
+.bigBox section .bigArticle .thirdButtonArticle {
+  height: 15%;
+  align-items: flex-start;
+}
+.bigBox section .bigArticle .thirdButtonArticle button {
+  height: 4vmin;
+  background: linear-gradient(#5a330f, #613913);
+}
+.bigBox section .bigArticle .inputArticle {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.bigBox section .bigArticle .inputArticle text {
+  width: 11%;
+  height: 100%;
+  color: #e3d5bd;
+  line-height: 165%;
+  text-align: center;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 1.8vmin;
+}
+.bigBox section .bigArticle .inputArticle input {
+  width: 7%;
+  height: 80%;
+  padding-right: 2%;
+  padding-left: 2%;
+  background: #274baf;
+  color: #e3d5bd;
+  font-size: 2.3vmin;
+  border-radius: 0.5vmin;
+  outline-style: none;
+  border: none;
+  text-align: right;
+}
+.bigBox section .bigArticle .matrixArticle {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-flow: column;
+}
+.bigBox section .bigArticle .matrixArticle article {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 0.2%;
+}
+.bigBox section .bigArticle .matrixArticle article div {
+  width: 9.5%;
+  height: 99%;
+  margin-right: 0.4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  flex-flow: column;
+  background: linear-gradient(#e3d5bd, #ccbfa8);
+  border-radius: 10%;
+  box-shadow: 0rem 0rem 0.5rem #3a3ac0;
+}
+.bigBox section .bigArticle .matrixArticle article div input {
+  width: 3.7vmin;
+  height: 3.7vmin;
+  border: none;
+  background: linear-gradient(90deg, #ece2d5, #d6ccbd);
+  border-radius: 50%;
+  box-shadow: inset 0rem 0rem 1rem #a49c93;
+  text-align: center;
+  margin-top: -15%;
+  color: #111111;
+  font-size: 2.1vmin;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+.bigBox section .smallArticle {
+  width: 5%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bigBox section .smallArticle > div {
+  width: 5.5vmin;
+  height: 8.5vmin;
+  background: linear-gradient(#e3d5bd, #ccbfa8);
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  box-shadow: 0rem 0rem 5rem #3a3ac0;
+}
+.bigBox section .smallArticle > div div:first-child {
+  width: 83.5%;
+  height: 52.8%;
+  margin-top: 25%;
+  background: linear-gradient(90deg, #ece2d5, #d6ccbd);
+  border-radius: 50%;
+  box-shadow: inset 0rem 0rem 1rem #a49c93;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bigBox section .smallArticle > div div:first-child .operatorText {
+  width: 70%;
+  height: 70%;
+  color: #111111;
+  text-align: center;
+  line-height: 75%;
+  font-size: 4vmin;
+  font-weight: bold;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}/*# sourceMappingURL=matrixCalculatorMain.css.map */

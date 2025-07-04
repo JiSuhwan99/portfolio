@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+  font-family: "Nanum Gothic Coding", monospace;
+  letter-spacing: -0.2rem;
+  cursor: default;
+}
+* input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+* button {
+  cursor: pointer;
+}
+* input {
+  cursor: text;
+}/*# sourceMappingURL=reset.css.map */

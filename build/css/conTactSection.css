@@ -1,0 +1,146 @@
+@import "reset.css";
+
+.contactSection .contactArticle {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  padding-top: 300px;
+}
+.contactSection .contactArticle .contactPicture {
+  width: 300px;
+  height: 500px;
+  background: url(../img/jisuhwanPicture3.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: 20%;
+  z-index: 90;
+  animation: picRotate 2s infinite;
+}
+.contactSection .contactArticle .thanksText {
+  font-size: 20rem;
+  z-index: 150;
+  color: #d0e9f3;
+  position: absolute;
+  z-index: 80;
+  top: 20%;
+}
+.contactSection .contactArticle .contactBox {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 300px;
+  flex-flow: column;
+  background: #DFF6FF;
+}
+.contactSection .contactArticle .contactBox .textBox {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-flow: column;
+  align-items: flex-start;
+  transform: translate(22%);
+}
+.contactSection .contactArticle .contactBox .textBox header {
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 3%;
+  color: #092252;
+}
+.contactSection .contactArticle .contactBox .textBox header span {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #cf492b;
+}
+.contactSection .contactArticle .contactBox .textBox p {
+  font-weight: 300;
+  font-size: 2.1rem;
+  line-height: 180%;
+  color: #333333;
+}
+.contactSection .contactArticle .contactBox .textBox p span {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #092252;
+}
+.contactSection .contactArticle .contactBox .infoBox {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 15%;
+  transform: translate(23%, -50%);
+}
+.contactSection .contactArticle .contactBox .infoBox article {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 31%;
+  height: 100%;
+}
+.contactSection .contactArticle .contactBox .infoBox article div {
+  width: 17.78%;
+  height: 74.626%;
+}
+.contactSection .contactArticle .contactBox .infoBox article a {
+  width: 80%;
+  text-decoration: none;
+}
+.contactSection .contactArticle .contactBox .infoBox article a span {
+  height: 74.626%;
+  color: #333333;
+  letter-spacing: -0.1rem;
+  line-height: 230%;
+  margin-left: 2%;
+  font-size: 2.2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.contactSection .contactArticle .contactBox .infoBox .phoneBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.contactSection .contactArticle .contactBox .infoBox .phoneBox div {
+  background: url(../img/phoneImage.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.contactSection .contactArticle .contactBox .infoBox .emailBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.contactSection .contactArticle .contactBox .infoBox .emailBox div {
+  background: url(../img/emailImage.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.contactSection .contactArticle .contactBox .infoBox .talkBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.contactSection .contactArticle .contactBox .infoBox .talkBox div {
+  background: url(../img/kakaoImage.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 30%;
+}
+.contactSection .contactArticle .contactBox .infoBox :hover {
+  transform: translateY(-5%);
+}/*# sourceMappingURL=contactSection.css.map */
+.notificationText {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}

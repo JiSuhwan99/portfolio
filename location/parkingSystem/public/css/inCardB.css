@@ -1,0 +1,97 @@
+@import 'reset.css';
+body .inPageBBg {
+  width: 120rem;
+  height: 150rem;
+  background-color: rgba(10, 10, 10, 0.4);
+  position: absolute;
+  display: block;
+  visibility: hidden;
+}
+body .inPageBBg .inPageBCheckArea {
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -35rem;
+  margin-top: -35rem;
+  width: 70rem;
+  height: 70rem;
+  background-color: rgb(63, 63, 124);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body .inPageBBg .inPageBCheckArea .inPageBnoticeArea {
+  margin-top: 2rem;
+  width: 60rem;
+  height: 7rem;
+  font-size: 4.5rem;
+  text-align: center;
+  background-color: rgb(63, 63, 124);
+  color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .inPageBBg .inPageBCheckArea .inPageContentAreaB {
+  margin-top: -4rem;
+  width: 65rem;
+  height: 45rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  border-radius: 2rem;
+  background-color: rgb(245, 245, 245);
+}
+body .inPageBBg .inPageBCheckArea .inPageContentAreaB input {
+  width: 60rem;
+  height: 10rem;
+  font-size: 8rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  border: none;
+  outline: none;
+}
+body .inPageBBg .inPageBCheckArea .inPageContentAreaB article {
+  display: flex;
+}
+body .inPageBBg .inPageBCheckArea .inPageContentAreaB article input {
+  border: none;
+  outline: none;
+}
+body .inPageBBg .inPageBCheckArea .inPageContentAreaB article .carNumInformation {
+  margin-top: 2rem;
+  font-size: 3rem;
+  margin-right: 5rem;
+}
+body .inPageBBg .inPageBCheckArea .inPageContentAreaB article .carNumInformation input {
+  font-size: 4rem;
+  width: 25rem;
+  height: 5rem;
+}
+body .inPageBBg .inPageBCheckArea .inPageContentAreaB article .entranceTimeInformation {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  font-size: 3rem;
+}
+body .inPageBBg .inPageBCheckArea .inPageContentAreaB article .entranceTimeInformation input {
+  font-size: 4rem;
+  width: 25rem;
+  height: 5rem;
+}
+body .inPageBBg .inPageBCheckArea .inPageContentAreaB input[type=submit] {
+  margin-top: 8rem;
+  width: 20rem;
+  height: 10rem;
+  background-color: rgb(110, 124, 212);
+  font-size: 5rem;
+  color: rgb(245, 245, 245);
+  border: none;
+  font-weight: bold;
+  border-radius: 2rem;
+  box-shadow: inset 0.8rem 0.8rem 2rem 0.3rem rgba(255, 255, 255, 0.25);
+}
