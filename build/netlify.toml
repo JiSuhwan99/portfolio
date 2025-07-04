@@ -1,0 +1,5 @@
+[[redirects]]
+from = "/location/hanoiTower/*"
+to = "/location/hanoiTower/build/html/:splat"
+status = 200
+force = true
