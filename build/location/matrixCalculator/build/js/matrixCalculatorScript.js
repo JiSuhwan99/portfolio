@@ -149,14 +149,14 @@ class MatrixCalculator {
                     if(isNaN(plusArrayThree[i][j]) == false) {
                         this.matrixPrint(plusArrayOne, plusArrayTwo, plusArrayThree);
                     } else if(isNaN(plusArrayThree[i][j]) == true) {
-                        $(`#errorBox span`).html(`�됰젹�� �ㅼ떆 �뺤씤�� 二쇱꽭��.`);
+                        $(`#errorBox span`).html(`다시 확인하여 진행해주세요.`);
                         $(`#errorSection`).css(`visibility`,`visible`);
                         $(`#thirdMatrixArticle input`).val(``);
                     } 
                 }
             }
         } else {
-            $(`#errorBox span`).html(`�� �됰젹�� �ш린媛� 媛숈븘�� �⑸땲��.`);
+            $(`#errorBox span`).html(`다시 확인하여 진행해주세요.`);
             $(`#errorSection`).css(`visibility`,`visible`);
         }
             break;
@@ -187,7 +187,7 @@ class MatrixCalculator {
             for(i=0; i<minusArrayThree.length; i++) {
                 for(j=0; j<minusArrayThree[0].length; j++) {
                     if(isNaN(parseInt(minusArrayThree[i][j]))) {
-                        $(`#errorBox span`).html(`�됰젹�� �ㅼ떆 �뺤씤�� 二쇱꽭��.`);
+                        $(`#errorBox span`).html(`다시 확인하여 진행해주세요.`);
                         $(`#errorSection`).css(`visibility`,`visible`);
                         $(`#thirdMatrixArticle input`).val(``);
 
@@ -236,7 +236,7 @@ class MatrixCalculator {
                 for(j=0; j<multiplyArrayThree[0].length; j++) {
                     if(isNaN(parseInt(multiplyArrayThree[j]))) {
                         $(`#errorSection`).css(`visibility`,`visible`);
-                        $(`#errorBox span`).html(`�됰젹�� �ㅼ떆 �뺤씤�� 二쇱꽭��.`);
+                        $(`#errorBox span`).html(`다시 확인하여 진행해주세요.`);
                     } else {
                         this.matrixPrint(multiplyArrayOne, multiplyArrayTwo, multiplyArrayThree);
                     } 
@@ -244,7 +244,7 @@ class MatrixCalculator {
             }
             $(`#thirdMatrixArticle * input`).css(`font-size`,`1.5vmin`);
         } else {
-            $(`#errorBox span`).html(`泥� 踰덉㎏ �됰젹�� �� �섎뒗 <br> �� 踰덉㎏ �됰젹�� �� �섏� 媛숈븘�� �⑸땲��.`);
+            $(`#errorBox span`).html(`다시 확인하여 진행해주세요.`);
             $(`#errorSection`).css(`visibility`,`visible`);
         }
         break;
